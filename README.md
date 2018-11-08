@@ -1,6 +1,9 @@
 # Trader Space #  
+  
 ------------------------------------------------------------  
+  
 Ce travail a été réalisé en peer-programming @vano et @LisaLou  
+  
 ------------------------------------------------------------  
   
 ### Step by Step  
@@ -10,7 +13,7 @@ Ce travail a été réalisé en peer-programming @vano et @LisaLou
 *2/* genération d'un controller 'user' methode: index, new, show  
   
 *3/* génération d'un model 'Crypto'  
-    * Qui a généré une table cryptos (:name, :currency)  
+  * Qui a généré une table cryptos (:name, :currency)  
   
 *4/* test en console la BDD en sauvegardant deux crypto test  
   
