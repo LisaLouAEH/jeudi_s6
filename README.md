@@ -40,5 +40,10 @@
         L lien index OK!  
         L lien new avec form  
         L lien show retour de la valeur.  
-  
+
 11/ inserer un formulaire pour soummettre un nom de crypto  
+        L inséré dans le show, verif les liaison avec le show ok
+        L afficher le nom de crypto saisie par l'utilisateur et sa valeur dans show  
+        L !!!! bug rencontré a cette étape : on découvre qu'on ne peux pas réutiliser  la valeur d'un var globale dans une autre view que celle ou elle est instenciée.
+12/ afficher tout les noms de crypto sur la page d'index
+        L testé OK

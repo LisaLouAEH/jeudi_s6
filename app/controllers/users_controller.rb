@@ -1,17 +1,22 @@
 class UsersController < ApplicationController
     def index 
-        #comment reset la base de donnée via ruby ?
-        #db:reset 
-        @crypt = StartScrap.new.perform
+        
+        @saisi = User.new 
+        p = Crypto.all
+
+        if  p == nil || p== []
+            @crypt = StartScrap.new.perform
+        else  
+            p.destroy_all
+            @crypt = StartScrap.new.perform
+        end
     end
-    def new 
-        @crypt = User.new 
-    end
-    def create 
-        @crypt = Crypto.find_by(name: params[:user][:name])
-        puts @crypt
-        redirect_to show_path
-    end
+
     def show 
+        puts "####################################################"
+        puts "les PARAMS--> #{params[:user][:crypto_id]}"
+        @result = Crypto.find_by(id: params[:user][:crypto_id])
+        puts "ceci est la saisie #{@result} !!!!" 
     end
+    
 end
