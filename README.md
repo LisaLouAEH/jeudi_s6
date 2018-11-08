@@ -47,3 +47,7 @@
         L !!!! bug rencontré a cette étape : on découvre qu'on ne peux pas réutiliser  la valeur d'un var globale dans une autre view que celle ou elle est instenciée.
 12/ afficher tout les noms de crypto sur la page d'index
         L testé OK
+        L retiré parceque c'est moche et inutil
+13/ installer un systeme de dropdown
+        L afficher toute les crypto ok
+        L grosse galere de route rencontrée a partir du formulaire (a retravailler...)

@@ -1,7 +1,7 @@
 class UsersController < ApplicationController
     def index 
-        
-        @saisi = User.new 
+        #comment reset la base de donnée via ruby ?
+        #db:reset 
         p = Crypto.all
 
         if  p == nil || p== []
@@ -12,11 +12,16 @@ class UsersController < ApplicationController
         end
     end
 
+    def new 
+        @saisi = User.new 
+    end
+
     def show 
         puts "####################################################"
         puts "les PARAMS--> #{params[:user][:crypto_id]}"
         @result = Crypto.find_by(id: params[:user][:crypto_id])
-        puts "ceci est la saisie #{@result} !!!!" 
+        puts "ceci est la saisie #{@result} !!!!"
+        
     end
     
 end

@@ -1,14 +1,4 @@
 <h1>Page index</h1>
-
-<h1>formulaire choisir une crypto</h1>
-<div class="row">
-  <div class="col-md-6 col-md-offset-3">
-    <%= form_for(:user, url: show_path) do |f| %>
-
-      <%= f.label :crypto_user %>
-      <%= f.collection_select :crypto_id, Crypto.order(:name),:id,:name, {include_blank: false}, {class: "form-control"} %>
-
-      <%= f.submit "rechercher", class: "btn btn-primary" %>
-    <% end %>
-  </div>
-</div>
+<!--======================Liste de toute les cryptos====================-->
+<h2>Liste des crypto</h2>
+<%= link_to 'rechercher une crypto en particulier ?', new_path %>
